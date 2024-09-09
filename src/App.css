@@ -1,38 +1,89 @@
+body {
+  color: #7e8185 !;
+}
 .App {
-  text-align: center;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  padding: 0.5rem;
+  border-bottom: 1px solid #d1d1d1;
+  width: 100%;
+  color: #7e8185;
+  font-weight: 600;
 }
-
-.App-link {
-  color: #61dafb;
+main {
+  padding: 24px;
 }
+.variant .input-edit {
+  border-radius: 30px;
+}
+input .input-full {
+  border: 1px solid #00000012;
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  outline: none; /* Removes the focus border */
+  box-shadow: none; /* Removes shadow */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 0.5rem;
+}
+.input-edit {
+  display: flex;
+  gap: 10px;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  border: 1px solid #00000012;
+  background: #ffffff;
+  padding: 0.5rem;
+  max-width: 280px;
+  justify-content: space-between;
+}
+.input-edit input {
+  border: none;
+  outline: none; /* Removes the focus border */
+  box-shadow: none; /* Removes shadow */
+}
+.input-edit input:focus {
+  border: none;
+  outline: none; /* Removes the focus border */
+  box-shadow: none; /* Removes shadow */
+}
+.green-button {
+  background: #008060;
+  min-width: 141px;
+  min-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  border-color: #008060;
+  opacity: 0px;
+}
+.green-outline-button {
+  border: 2px solid #008060;
+  color: #008060;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem;
+}
+.parent-discount input {
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  border: 1px solid;
+  max-width: 280px;
+  width: min-content;
+  padding: 0.5rem;
+}
+.variant {
+  margin-left: 25px;
+}
+.variant .parent-discount input {
+  border-radius: 30px;
 }
